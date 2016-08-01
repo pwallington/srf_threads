@@ -2,7 +2,7 @@
 [size=18][i][b]Welcome to the SRF![/b][/size]
 We pride ourselves on a friendly, competitive and yet relaxed atmosphere both on and off-track. Don't be afraid to ask for help, either in practice sessions or on the forum![/i]
 
-#TRACK_BANNER_IMG#
+[img]#TRACK_BANNER_IMG#[/img]
 
 [color=red][size=18]Spec Racer Ford Challenge Series @ [b] #TRACK_LONG_NAME# [/b]
 Week #WEEK_NUM# of 12 - #SEASON_LONG_ID# [/size][/color]
@@ -10,7 +10,7 @@ Race Distance: #LAPS# laps, approximately 25 minutes
 
 #PREAMBLE#
 
-#TRACK_MAP_IMG#
+[img]#TRACK_MAP_IMG#[/img]
 
 [size=18][b]TRACK FAMILIARISATION VIDEOS[/b][/size]
 [b]Lap guide:[/b]
@@ -46,7 +46,7 @@ The recently updated [url=http://members.iracing.com/jforum/posts/list/3475225.p
 
 You can complete a full 8 week season by acquiring [url=http://members.iracing.com/jforum/posts/list/3288130.page]only 3 paid tracks[/url], if you don't have any.
 
-N.B. The weather settings are random in each session. There is no point comparing laptimes from different servers.
+N.B. The weather settings are random in each session, greatly affecting lap times. Take note of the weather when comparing laptimes from different servers.
 
 [url=http://members.iracing.com/jforum/posts/list/3343863.page]Link: SRF Setup Shop Thread [/url]
 [url=http://members.iracing.com/jforum/posts/list/3293460.page]Link : SRF Demo Laps[/url]
