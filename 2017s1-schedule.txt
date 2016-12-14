@@ -1,0 +1,12 @@
+1 : LimeRock:Full
+2 : Spa:Classic
+3 : MidOhio:Full
+4 : Summit
+5 : WGI:CBoot
+6 : RAtlanta:Short
+7 : Bathurst
+8 : Charlotte:Road
+9 : NurbGP:GP
+10 : RAtlanta:Full
+11 : Imola:GP
+12 : Interlagos:GP
