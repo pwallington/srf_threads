@@ -1,0 +1,12 @@
+1 : WGI:CBoot
+2 : Sebring:Int
+3 : RAtlanta:Full
+4 : Okayama:Short
+5 : VIR:North
+6 : Spa:Classic
+7 : Barber:Full
+8 : LagunaSeca
+9 : VIR:Full
+10 : Interlagos:GP
+11 : Bathurst
+12 : LimeRock:Full

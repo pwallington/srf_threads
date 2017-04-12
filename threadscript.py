@@ -3,9 +3,9 @@
 from datetime import date, timedelta
 from re import sub
 
-season = 1
+season = 2
 year = 2017
-wk1_start = date(2016, 12, 13)
+wk1_start = date(2017, 3, 14)
 startweek = 1
 endweek = 12
 thread_template = '../template'
@@ -13,16 +13,17 @@ thread_template = '../template'
 schedule = {}
 with open("../{}s{}-schedule.txt".format(year, season), 'r') as f: 
 	for line in f.readlines():
+		print(line,)
 		(num, track) = line.strip().split(' : ')
 		# print ("Found schedule wk %s @ %s" % (num, track))
 		schedule[int(num)] = track
 
-saturdays = {}
-with open("../{}s{}-saturdays.txt".format(year, season), 'r') as f: 
-	for line in f.readlines():
-		(num, track) = line.strip().split(' : ')
-		# print ("Found saturdays wk %s @ %s" % (num, track))
-		saturdays[int(num)] = track
+# saturdays = {}
+# with open("../{}s{}-saturdays.txt".format(year, season), 'r') as f: 
+# 	for line in f.readlines():
+# 		(num, track) = line.strip().split(' : ')
+# 		# print ("Found saturdays wk %s @ %s" % (num, track))
+# 		saturdays[int(num)] = track
 
 
 # Read the thread template
@@ -37,6 +38,7 @@ for i in range (startweek, endweek+1):
 		for line in tr_file.readlines():
 				
 				if (notes == 0):
+					print(line,)
 					(tag, value) = line.strip().split(' : ')
 					# print ("Found tag: %s with value: %s" % (tag, value))
 					if (tag == "TRACK_NOTES"):
@@ -54,9 +56,9 @@ for i in range (startweek, endweek+1):
 	sat_follow = wk_start + timedelta(4)
 	sun_follow = wk_start + timedelta(5)
 
-	wkfile = sub("#SATURDAY_TRACK#",  			saturdays[i], wkfile)
+	# wkfile = sub("#SATURDAY_TRACK#",  			saturdays[i], wkfile)
 	wkfile = sub("#DATE_MON_BEFORE#", mon_before.isoformat(), wkfile)
-	wkfile = sub("#DATE_SAT_FOLLOW#", sat_follow.isoformat(), wkfile)
+	# wkfile = sub("#DATE_SAT_FOLLOW#", sat_follow.isoformat(), wkfile)
 	wkfile = sub("#DATE_SUN_BEFORE#", sun_before.isoformat(), wkfile)
 	wkfile = sub("#DATE_SUN_FOLLOW#", sun_follow.isoformat(), wkfile)
 	wkfile = sub(			"#YEAR#", 			   str(year), wkfile)
