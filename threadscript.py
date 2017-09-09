@@ -3,9 +3,9 @@
 from datetime import date, timedelta
 from re import sub
 
-season = 2
+season = 3
 year = 2017
-wk1_start = date(2017, 3, 14)
+wk1_start = date(2017, 6, 13)
 startweek = 1
 endweek = 12
 thread_template = '../template'

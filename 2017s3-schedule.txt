@@ -1,0 +1,12 @@
+1 : Daytona07:Road
+2 : WGI:CBoot
+3 : Sebring:Int
+4 : Summit
+5 : Nords
+6 : Spa:Classic
+7 : LagunaSeca
+8 : VIR:Full
+9 : Mosport
+10 : RAmerica
+11 : Sebring:Club
+12 : Okayama:Full

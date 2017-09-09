@@ -1,0 +1,12 @@
+1 : Charlotte:Road
+2 : Snetterton:200
+3 : WGI:Cup
+4 : RAtlanta:Full
+5 : LeMans
+6 : LimeRock:Full
+7 : Mosport
+8 : RAmerica
+9 : Summit
+10 : Nords
+11 : Okayama:Full
+12 : Spa:Classic
