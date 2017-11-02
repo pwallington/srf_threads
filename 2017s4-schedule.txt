@@ -2,7 +2,7 @@
 2 : Snetterton:200
 3 : WGI:Cup
 4 : RAtlanta:Full
-5 : LeMans
+5 : LeMans:24h
 6 : LimeRock:Full
 7 : Mosport
 8 : RAmerica

@@ -2,13 +2,23 @@
 # Set dates for the weekly threads
 from datetime import date, timedelta
 from re import sub
+import sys
 
-season = 3
+thread_template = '../template'
 year = 2017
-wk1_start = date(2017, 6, 13)
+season = 4
 startweek = 1
 endweek = 12
-thread_template = '../template'
+wk1_start = date(2017, 9, 12)
+
+if (len(sys.argv) >= 2):
+	year = int(sys.argv[1])
+if (len(sys.argv) >= 3):
+	season = int(sys.argv[2])
+if (len(sys.argv) >= 4):
+	startweek = int(sys.argv[3])
+if (len(sys.argv) >= 5):
+	endweek = int(sys.argv[4])
 
 schedule = {}
 with open("../{}s{}-schedule.txt".format(year, season), 'r') as f: 
