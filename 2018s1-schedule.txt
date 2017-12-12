@@ -1,0 +1,12 @@
+1 : WGI:Cup
+2 : MidOhio:Full
+3 : Summit
+4 : Daytona07:Road
+5 : Interlagos:GP
+6 : Spa:Classic
+7 : Zandvoort:GP
+8 : Daytona07:Short
+9 : PhillipIsland
+10 : LagunaSeca
+11 : RAtlanta:Short
+12 : LimeRock:Full
