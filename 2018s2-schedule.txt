@@ -1,0 +1,12 @@
+1 : Charlotte:Road
+2 : Interlagos:GP
+3 : LimeRock:Full
+4 : Bathurst
+5 : WGI:Cup
+6 : Suzuka:GP
+7 : Okayama:Short
+8 : PhillipIsland
+9 : Sebring:Club
+10 : LagunaSeca
+11 : MidOhio:Full
+12 : Spa:Classic

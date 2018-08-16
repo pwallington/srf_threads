@@ -7,7 +7,7 @@ We pride ourselves on a friendly, competitive and yet relaxed atmosphere both on
 [color=red][size=18]Spec Racer Ford Challenge Series @ [b] #TRACK_LONG_NAME#[/b]
 Week #WEEK_NUM# of 12 - #YEAR# Season #SEASON# [/size][/color]
 Race Distance: [b]#LAPS# laps[/b], approximately 25 minutes
-World Record lap time: [b]#WR_LAP_TIME#[/b] by #WR_DRIVER#
+World Record lap time (qualifying): [b]#WR_LAP_TIME#[/b] by #WR_DRIVER#
 (n.b. random/dynamic weather impacts lap times greatly)
 
 #PREAMBLE#
@@ -19,9 +19,11 @@ Target "planned" SoF race is usually 20:45 GMT Sunday, immediately following the
 [size=18][b]TRACK GUIDE VIDEOS[/b][/size]
 [b]Lap guide:[/b]
 #GUIDE_VIDEO_1#
+#GUIDE_VIDEO_2#
 
 [b]Demo Lap:[/b]
 #DEMO_VIDEO_1#
+#DEMO_VIDEO_2#
 
 [size=18][b]TRACK NOTES[/b][/size]
 
@@ -29,13 +31,17 @@ Target "planned" SoF race is usually 20:45 GMT Sunday, immediately following the
 
 [size=18][b]REGULAR HOSTED EVENTS[/b][/size]
 [b][color=red]FauxSpeed:[/color][/b]
-  The Fauxspeed sessions run in advance of every week. The aim is to have some fun and learn the coming week's track in a relaxed, informal setting.  [b]Everyone is welcome![/b]  Setups, advice, etc. will all be freely shared. 80 minutes practice, 2 lap qualifying, 30 minutes racing. 'Mandatory' demo derby after the race ;) Session password: fauxspeed
-    - Sunday [b]#DATE_SUN_BEFORE#[/b] @ 20:00 EDT / 17:00 PDT - [url=http://members.iracing.com/jforum/posts/list/3584298.page]US session[/url]
-    - Monday [b]#DATE_MON_BEFORE#[/b] @ 19:00 GMT / 20:00 CET - [url=http://members.iracing.com/jforum/posts/list/3598168.page]EU session[/url]
+  The Fauxspeed sessions run in advance of every week. The aim is to have some fun and learn the coming week's track in a relaxed, informal setting.  [b]Everyone is welcome![/b]  Setups, advice, etc. will all be freely shared. 80 minutes practice, 2 lap qualifying, 30 minutes racing. Mandatory demo derby after the race ;) Session password: fauxspeed
+    - Sunday [b]#DATE_SUN_BEFORE#[/b] @ 20:00 EST / 17:00 PST - [url=#FAUX_US_URL#]US session[/url]
+    - Monday [b]#DATE_MON_BEFORE#[/b] @ 19:00 GMT / 20:00 CET - [url=#FAUX_EU_URL#]EU session[/url]
 
-[b][color=red]SRF Weekend Warriors League[/color][/b] [url=http://members.iracing.com/membersite/member/LeagueView.do?league=1566][League Page][/url] - [url=http://members.iracing.com/jforum/posts/list/3598253.page.page][Thread][/url]
+[b][color=red]SRF Weekend Warriors League[/color][/b] [url=http://members.iracing.com/membersite/member/LeagueView.do?league=1566][League Page][/url] - [url=http://members.iracing.com/jforum/posts/list/3500797.page][Thread][/url]
   Competitive league racing in a friendly atmosphere, following the official SRF track schedule. Runs every Sunday to round off the racing at this week's track. Embodying the spirit of the SCCA racing community, help and advice, sharing of setups etc are all encouraged!
-    - Sunday [b]#DATE_SUN_FOLLOW#[/b] @ 19:15 GMT / 18:15 BST / 14:15 EDT / 11:15 PDT
+    - Sunday [b]#DATE_SUN_FOLLOW#[/b] @ 19:00 GMT / 15:00 EST / 12:00 PST
+
+[b][color=red]The Saturday Challenge[/color][/b] - [url=http://members.iracing.com/jforum/posts/list/3512095.page][Thread][/url]
+A new weekly multi-car event being run by Phillipe Chauvin. Combining 4 cars: SRF, Mazda, Legends Coupe and Skip Barber. Cars are balanced with weight/fuel penalties to provide a fun race for everyone, with a chance for any car to win! Pitstop strategy will be required :) This week at [color=blue]#SATURDAY_TRACK#[/color]
+	- Saturday [b]#DATE_SAT_FOLLOW#[/b] @ 19:00 GMT / 15:00 EST / 12:00 PST
 
 [size=18][b]USEFUL INFO FOR NEWCOMERS[/b][/size]
 (Suggestions/improvements to this reference info are always appreciated!)
@@ -50,7 +56,7 @@ You can complete a full 8 week season by acquiring [url=http://members.iracing.c
 
 N.B. The weather settings are random in each session, greatly affecting lap times. Take note of the weather when comparing laptimes from different servers.
 
-[url=http://members.iracing.com/jforum/posts/list/3557670.page]Link: SRF Setup Shop Thread [/url]
+[url=http://members.iracing.com/jforum/posts/list/3343863.page]Link: SRF Setup Shop Thread [/url]
 [url=http://members.iracing.com/jforum/posts/list/3293460.page]Link : SRF Demo Laps[/url]
 [url=http://members.iracing.com/jforum/posts/list/1453918.page] Link : SRF Shift Points[/url] - shift at 5600rpm or below!
 [url=http://members.iracing.com/jforum/posts/list/1354827.page#2946101] Link: John Bodin's Essential Readings[/url]
@@ -58,5 +64,7 @@ N.B. The weather settings are random in each session, greatly affecting lap time
 [url=http://www.nessoft.com/ispeed/] Link: iSpeed lap analyzer [/url]
 [url=https://www.youtube.com/watch?v=xQRmYMlmdqM&feature] Link: Skip Barber Racing School video [/url]
 
-Weekly standings:
-[img]http://irleagues.com/srf/img/#YEAR#s#SEASON#/#WEEK_NUM#/weekstats.png[/img]
+
+[b]Graphical representation of the most recent official SRF race[/b] (automatically updated)
+[i][u]Click on the images to get an interactive version[/u][/i]
+[url=https://plot.ly/~SRF_Stats/529.embed][img]https://plot.ly/~SRF_Stats/529.png[/img][/url]

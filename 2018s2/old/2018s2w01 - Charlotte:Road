@@ -1,41 +1,48 @@
-[Weekly Briefing] #TRACK_SHORT_NAME# - #YEAR#s#SEASON# Week #WEEK_NUM#
+[Weekly Briefing] Charlotte - 2018s2 Week 1
 [size=18][i][b]Welcome to the SRF![/b][/size]
 We pride ourselves on a friendly, competitive and yet relaxed atmosphere both on and off-track. Don't be afraid to ask for help, either in practice sessions or on the forum![/i]
 
-[img]#TRACK_BANNER_IMG#[/img]
+[img]http://members.iracing.com/jforum/posts/downloadAttach/2429682.page[/img]
 
-[color=red][size=18]Spec Racer Ford Challenge Series @ [b] #TRACK_LONG_NAME#[/b]
-Week #WEEK_NUM# of 12 - #YEAR# Season #SEASON# [/size][/color]
-Race Distance: [b]#LAPS# laps[/b], approximately 25 minutes
-World Record lap time: [b]#WR_LAP_TIME#[/b] by #WR_DRIVER#
+[color=red][size=18]Spec Racer Ford Challenge Series @ [b] Charlotte Motor Speedway - Road Course[/b]
+Week 1 of 12 - 2018 Season 2 [/size][/color]
+Race Distance: [b]18 laps[/b], approximately 25 minutes
+World Record lap time: [b]1:20.305[/b] by Gabriel Tobar
 (n.b. random/dynamic weather impacts lap times greatly)
 
-#PREAMBLE#
+This week head to Charlotte Motor Speedway's "Road" layout. A combination of the twisty infield with a challenging uphill corner, and 3/4 of the full oval makes for great racing. The strong draft around the oval section will lead to a lot of last-lap strategy - do you wait behind the leader to pass on the oval, or try to lead out the whole last lap?
 
 Target "planned" SoF race is usually 20:45 GMT Sunday, immediately following the Weekend Warriors league race.
 
-[img]#TRACK_MAP_IMG#[/img]
+[img]http://members.iracing.com/jforum/posts/downloadAttach/2429683.page[/img]
 
 [size=18][b]TRACK GUIDE VIDEOS[/b][/size]
 [b]Lap guide:[/b]
-#GUIDE_VIDEO_1#
+Driver: Jamie Fluke (2015s2)
+[youtube]http://www.youtube.com/watch?v=sMQfsmYjoK0[/youtube]
 
 [b]Demo Lap:[/b]
-#DEMO_VIDEO_1#
+Driver: Luca Varani (2013s2)
+Lap Time: 1:23.259
+[youtube]https://www.youtube.com/watch?v=1gW7GnK6ukE[/youtube]
 
 [size=18][b]TRACK NOTES[/b][/size]
 
-#TRACK_NOTES#
+[color=red][b]IMPORTANT:[/b][/color] The pit lane exits [i]directly[/i] onto the inside of turn one! PLEASE make sure to check for oncoming traffic before exiting the pits!
+[youtube]http://www.youtube.com/watch?v=FlYIqRIuS3s[/youtube]
+
+[color=red][b]IMPORTANT:[/b][/color]The white line at the bottom of the banking defines the edge of the 'racing surface', according to iRacing staff. [b]Do not run below this line[/b] attempting to 'shortcut' the corners. Even though you will not get a 1x this *is* a protestable violation of the Sporting Code.
+
 
 [size=18][b]REGULAR HOSTED EVENTS[/b][/size]
 [b][color=red]FauxSpeed:[/color][/b]
   The Fauxspeed sessions run in advance of every week. The aim is to have some fun and learn the coming week's track in a relaxed, informal setting.  [b]Everyone is welcome![/b]  Setups, advice, etc. will all be freely shared. 80 minutes practice, 2 lap qualifying, 30 minutes racing. 'Mandatory' demo derby after the race ;) Session password: fauxspeed
-    - Sunday [b]#DATE_SUN_BEFORE#[/b] @ 20:00 EDT / 17:00 PDT - [url=http://members.iracing.com/jforum/posts/list/3584298.page]US session[/url]
-    - Monday [b]#DATE_MON_BEFORE#[/b] @ 19:00 GMT / 20:00 CET - [url=http://members.iracing.com/jforum/posts/list/3598168.page]EU session[/url]
+    - Sunday [b]2018-03-11[/b] @ 20:00 EDT / 17:00 PDT - [url=http://members.iracing.com/jforum/posts/list/3584298.page]US session[/url]
+    - Monday [b]2018-03-12[/b] @ 19:00 GMT / 20:00 CET - [url=http://members.iracing.com/jforum/posts/list/3598168.page]EU session[/url]
 
-[b][color=red]SRF Weekend Warriors League[/color][/b] [url=http://members.iracing.com/membersite/member/LeagueView.do?league=1566][League Page][/url] - [url=http://members.iracing.com/jforum/posts/list/3598253.page.page][Thread][/url]
+[b][color=red]SRF Weekend Warriors League[/color][/b] [url=http://members.iracing.com/membersite/member/LeagueView.do?league=1566][League Page][/url] - [url=http://members.iracing.com/jforum/posts/list/3528744.page][Thread][/url]
   Competitive league racing in a friendly atmosphere, following the official SRF track schedule. Runs every Sunday to round off the racing at this week's track. Embodying the spirit of the SCCA racing community, help and advice, sharing of setups etc are all encouraged!
-    - Sunday [b]#DATE_SUN_FOLLOW#[/b] @ 19:15 GMT / 18:15 BST / 14:15 EDT / 11:15 PDT
+    - Sunday [b]2018-03-18[/b] @ 19:15 GMT / 18:15 BST / 14:15 EDT / 11:15 PDT
 
 [size=18][b]USEFUL INFO FOR NEWCOMERS[/b][/size]
 (Suggestions/improvements to this reference info are always appreciated!)
@@ -59,4 +66,4 @@ N.B. The weather settings are random in each session, greatly affecting lap time
 [url=https://www.youtube.com/watch?v=xQRmYMlmdqM&feature] Link: Skip Barber Racing School video [/url]
 
 Weekly standings:
-[img]http://irleagues.com/srf/img/#YEAR#s#SEASON#/#WEEK_NUM#/weekstats.png[/img]
+[img]http://irleagues.com/srf/img/2018s2/1/weekstats.png[/img]
