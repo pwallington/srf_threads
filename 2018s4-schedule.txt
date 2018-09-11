@@ -1,0 +1,12 @@
+1 : LimeRock:Full
+2 : Daytona07:Bike
+3 : RAmerica
+4 : Mosport
+5 : Okayama:Full
+6 : Motegi:GP
+7 : Summit
+8 : Montreal
+9 : WGI:Boot
+10 : Spa:Classic
+11 : Donington:National
+12 : Brands:GP

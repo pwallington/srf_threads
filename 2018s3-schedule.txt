@@ -7,6 +7,6 @@
 7 : Pocono11:East
 8 : Bathurst
 9 : LagunaSeca
-10 : Watkins:Cup
+10 : WGI:Cup
 11 : Mosport
 12 : Spa:Classic

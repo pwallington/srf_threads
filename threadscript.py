@@ -6,10 +6,10 @@ import sys
 
 thread_template = '../template'
 year = 2018
-season = 3
+season = 4
 startweek = 1
 endweek = 12
-wk1_start = date(2018, 6, 12) # TUESDAY
+wk1_start = date(2018, 9, 11) # TUESDAY
 
 if (len(sys.argv) >= 2):
 	year = int(sys.argv[1])
