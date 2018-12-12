@@ -5,11 +5,11 @@ from re import sub
 import sys
 
 thread_template = '../template'
-year = 2018
-season = 4
+year = 2019
+season = 1
 startweek = 1
 endweek = 12
-wk1_start = date(2018, 9, 11) # TUESDAY
+wk1_start = date(2018, 12, 11) # TUESDAY
 
 if (len(sys.argv) >= 2):
 	year = int(sys.argv[1])

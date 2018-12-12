@@ -1,4 +1,4 @@
-1 : Tsukuba2000
+1 : Tsukuba:2000Full
 2 : Interlagos:GP
 3 : Summit
 4 : Silverstone:GP
@@ -7,5 +7,6 @@
 7 : MidOhio:Chicane
 8 : BelleIsle
 9 : Montreal
-10: Donington:GP
-11: PhilipIsland
+10 : Charlotte:Road
+11 : Donington:GP
+12 : PhilipIsland
