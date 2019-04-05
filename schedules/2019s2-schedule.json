@@ -1,0 +1,140 @@
+{
+  "season": 2,
+  "year": 2019,
+  "vrs_id": 224830001,
+  "ir_id": 2365,
+  "weeks": [
+    {
+      "week": 1,
+      "track_name": "Interlagos",
+      "track_layout": "Grand Prix",
+      "start_date": "2019-03-12",
+      "race_length": "13 laps",
+      "start": "Standing start",
+      "cautions": "Local enforced cautions",
+      "weather_date": "2019-03-16 07:40",
+      "weather_rate": "1x"
+    },
+    {
+      "week": 2,
+      "track_name": "Nordschleife",
+      "track_layout": "Industriefahrten",
+      "start_date": "2019-03-19",
+      "race_length": "3 laps",
+      "start": "Standing start",
+      "cautions": "Local enforced cautions",
+      "weather_date": "2019-03-23 13:15",
+      "weather_rate": "1x"
+    },
+    {
+      "week": 3,
+      "track_name": "Tsukuba",
+      "track_layout": "2000 Moto",
+      "start_date": "2019-03-26",
+      "race_length": "21 laps",
+      "start": "Standing start",
+      "cautions": "Local enforced cautions",
+      "weather_date": "2019-03-30 16:40",
+      "weather_rate": "1x"
+    },
+    {
+      "week": 4,
+      "track_name": "Silverstone",
+      "track_layout": "International",
+      "start_date": "2019-04-02",
+      "race_length": "16 laps",
+      "start": "Standing start",
+      "cautions": "Local enforced cautions",
+      "weather_date": "2019-04-06 08:45",
+      "weather_rate": "1x"
+    },
+    {
+      "week": 5,
+      "track_name": "Lime Rock Park",
+      "track_layout": "Full",
+      "start_date": "2019-04-09",
+      "race_length": "27 laps",
+      "start": "Standing start",
+      "cautions": "Local enforced cautions",
+      "weather_date": "2019-04-13 13:00",
+      "weather_rate": "1x"
+    },
+    {
+      "week": 6,
+      "track_name": "Monza",
+      "track_layout": "Grand Prix",
+      "start_date": "2019-04-16",
+      "race_length": "12 laps",
+      "start": "Standing start",
+      "cautions": "Local enforced cautions",
+      "weather_date": "2019-04-20 18:40",
+      "weather_rate": "1x"
+    },
+    {
+      "week": 7,
+      "track_name": "Laguna Seca",
+      "track_layout": "",
+      "start_date": "2019-04-23",
+      "race_length": "15 laps",
+      "start": "Standing start",
+      "cautions": "Local enforced cautions",
+      "weather_date": "2019-04-27 08:05",
+      "weather_rate": "1x"
+    },
+    {
+      "week": 8,
+      "track_name": "Phillip Island",
+      "track_layout": "",
+      "start_date": "2019-04-30",
+      "race_length": "15 laps",
+      "start": "Standing start",
+      "cautions": "Local enforced cautions",
+      "weather_date": "2019-05-04 12:55",
+      "weather_rate": "1x"
+    },
+    {
+      "week": 9,
+      "track_name": "Circuit Park Zandvoort",
+      "track_layout": "Grand Prix",
+      "start_date": "2019-05-07",
+      "race_length": "13 laps",
+      "start": "Standing start",
+      "cautions": "Local enforced cautions",
+      "weather_date": "2019-05-11 19:30",
+      "weather_rate": "1x"
+    },
+    {
+      "week": 10,
+      "track_name": "Mid-Ohio",
+      "track_layout": "Full",
+      "start_date": "2019-05-14",
+      "race_length": "15 laps",
+      "start": "Standing start",
+      "cautions": "Local enforced cautions",
+      "weather_date": "2019-05-18 08:05",
+      "weather_rate": "1x"
+    },
+    {
+      "week": 11,
+      "track_name": "Charlotte",
+      "track_layout": "Road Course",
+      "start_date": "2019-05-21",
+      "race_length": "18 laps",
+      "start": "Standing start",
+      "cautions": "Local enforced cautions",
+      "weather_date": "2019-05-25 15:30",
+      "weather_rate": "1x"
+    },
+    {
+      "week": 12,
+      "track_name": "Spa",
+      "track_layout": "Classic Pits",
+      "start_date": "2019-05-28",
+      "race_length": "10 laps",
+      "start": "Standing start",
+      "cautions": "Local enforced cautions",
+      "weather_date": "2019-06-01 19:45",
+      "weather_rate": "1x"
+    }
+  ]
+}

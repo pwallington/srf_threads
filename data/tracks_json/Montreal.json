@@ -1,0 +1,15 @@
+{
+  "TRACK_SHORT_NAME": "Montreal",
+  "TRACK_LONG_NAME": "Circuit Gilles Villeneuve",
+  "LAPS": "16",
+  "TRACK_BANNER_IMG": ".",
+  "TRACK_MAP_IMG": "http://members.iracing.com/jforum/posts/downloadAttach/2345598.page",
+  "WR_LAP_TIME": "1:55.975",
+  "WR_DRIVER": "Robert Wittenbeck (Qualifying)",
+  "GUIDE_VIDEO_1": ".",
+  "GUIDE_VIDEO_2": ".",
+  "DEMO_VIDEO_1": "Driver: Luca Varani\\n[youtube]http://www.youtube.com/watch?v=rPFBLsIiKtU[/youtube]",
+  "DEMO_VIDEO_2": ".",
+  "PREAMBLE": "For week #WEEK_NUM# we're going north to Montreal. This technical Formula 1 track will test your skills with a number of tight chicanes, including one right before the start/finish line that leads into what's affectionately known as \"the wall of champions\"!",
+  "TRACK_NOTES": "As a general comment, the line through each of the chicanes is rather narrow and it can be dangerous to enter them side by side. Be careful and try it in practice before attempting to pass in a race; the line to take to leave enough room to another car is not obvious.\nPassing is easier before and after the hairpin, T10R."
+}
