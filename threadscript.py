@@ -2,12 +2,14 @@
 # Set dates for the weekly threads
 from datetime import date, timedelta
 from pprint import pprint
-from re import sub
 import argparse
 import json
 
+track_tags = ["TRACK_SHORT_NAME", "TRACK_LONG_NAME", "TRACK_BANNER_IMG", "TRACK_MAP_IMG", "WR_LAP_TIME",
+              "WR_DRIVER", "GUIDE_VIDEO_1", "GUIDE_VIDEO_2", "DEMO_VIDEO_1", "DEMO_VIDEO_2", "PREAMBLE", "TRACK_NOTES"]
+week_tags = ["RACE_LENGTH"]
+
 thread_template = 'template'
-wk1_start = date(2019, 3, 12)  # TUESDAY
 
 parser = argparse.ArgumentParser()
 parser.add_argument('-f', '--file', help="Schedule file to read")
@@ -25,56 +27,68 @@ if not args.output_dir:
 print("Active options:")
 pprint(args)
 
-with open("schedules/{}s{}-schedule.json".format(args.year, args.season), 'r') as f:
-    schedule = json.load(f)
-    for week in schedule['weeks']:
-        print("Found schedule wk", week['week'], '@', week['track_name'], week['track_layout'])
-
-exit()
-
 # Read the thread template
 with open(thread_template, 'r') as f:
     template_str = f.read()
 
-for i in range(args.begin_week, args.end_week + 1):
-    week_file = template_str
+with open("schedules/{}s{}-schedule.json".format(args.year, args.season), 'r') as f:
+    schedule = json.load(f)
+    for week in schedule['weeks']:
+        print("Found schedule wk", week['week'], '@', week['track_name'], week['track_layout'])
+        if not (args.begin_week <= week['week'] <= args.end_week):
+            print(" * Skipping")
+            continue
 
-    # Get track data and sub it in
-    notes = 0
-    with open("data/tracks_json/%s" % schedule[i], 'r') as tr_file:
+        try:
+            # Get track data
+            track_spec = week['track_name'].replace(" ", "")
+            if week['track_layout']:
+                track_spec += ':' + week['track_layout'].replace(" ", "")
+            track_file = './data/tracks_json/' + track_spec + '.json'
+            with open(track_file, 'r') as tr_file:
+                print(" * Loading track data file", track_file)
+                tr_data = json.load(tr_file)
+        except Exception:
+            print(" * Error loading track data")
+            continue
 
-        for line in tr_file.readlines():
+        week_file = template_str
+        # Sub tag data into the template
+        for tag in track_tags:
+            week_file = week_file.replace("#%s#" % tag, tr_data[tag])
+        for tag in week_tags:
+            week_file = week_file.replace("#%s#" % tag, week[tag.lower()])
 
-            if notes == 0:
-                # print(line)
-                (tag, value) = line.strip().split(' : ')
-                # print ("Found tag: %s with value: %s" % (tag, value))
-                if tag == "TRACK_NOTES":
-                    notes = 1
-                else:
-                    week_file = sub("#%s#" % tag, value, week_file)
-            else:
-                week_file = sub("(?=#TRACK_NOTES#)", line, week_file)
-    week_file = sub("#TRACK_NOTES#", '', week_file)
+        # set up dates for the week
+        import datetime
+        wk_start = datetime.date.fromisoformat(week['start_date'])
+        mon_before = wk_start - timedelta(1)
+        sun_before = wk_start - timedelta(2)
+        sat_follow = wk_start + timedelta(4)
+        sun_follow = wk_start + timedelta(5)
 
-    # set up dates for the week
-    wk_start = wk1_start + (i - 1) * timedelta(7)
-    mon_before = wk_start - timedelta(1)
-    sun_before = wk_start - timedelta(2)
-    sat_follow = wk_start + timedelta(4)
-    sun_follow = wk_start + timedelta(5)
+        # sub in dates
+        week_file = week_file.replace("#DATE_MON_BEFORE#", mon_before.isoformat())
+        week_file = week_file.replace("#DATE_SUN_BEFORE#", sun_before.isoformat())
+        week_file = week_file.replace("#DATE_SUN_FOLLOW#", sun_follow.isoformat())
+        week_file = week_file.replace("#YEAR#", str(args.year))
+        week_file = week_file.replace("#SEASON#", str(args.season))
+        # N.B. preamble week_file.replace required BEFORE this line!
+        week_file = week_file.replace("#WEEK_NUM#", str(week['week']))
 
-    # week_file = sub("#SATURDAY_TRACK#",  			saturdays[i], week_file)
-    week_file = sub("#DATE_MON_BEFORE#", mon_before.isoformat(), week_file)
-    # week_file = sub("#DATE_SAT_FOLLOW#", sat_follow.isoformat(), week_file)
-    week_file = sub("#DATE_SUN_BEFORE#", sun_before.isoformat(), week_file)
-    week_file = sub("#DATE_SUN_FOLLOW#", sun_follow.isoformat(), week_file)
-    week_file = sub("#YEAR#", str(args.year), week_file)
-    week_file = sub("#SEASON#", str(args.season), week_file)
-    # N.B. preamble sub required BEFORE this line!
-    week_file = sub("#WEEK_NUM#", str(i), week_file)
+        output_name = "{}/{}s{}w{:02} - {}".format(args.output_dir, args.year, args.season, week['week'], track_spec)
+        with open(output_name, 'w') as output_file:
+            output_file.write(week_file)
 
-    output_name = "{}/{}s{}w{:02} - {}".format(args.output_dir, args.year, args.season, i, schedule[i])
-    with open(output_name, 'w') as output_file:
-        output_file.write(week_file)
-        print("Wrote %s" % output_name)
+            print(" * Wrote %s" % output_name)
+
+            import requests
+            try:
+                vrs = requests.get("https://virtualracingschool.appspot.com/datapacksInfo/forumCode?id=224830001&week="+str(week['week']))
+                vrs.raise_for_status()
+                output_file.write("\n\n\n#####################\n\n\n\n")
+                output_file.write("VRS INFO:\n\n")
+                output_file.write(vrs.text)
+                print(" * Got VRS info")
+            except Exception:
+                print(" * Error getting VRS info")

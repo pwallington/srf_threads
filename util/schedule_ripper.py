@@ -1,5 +1,4 @@
 from bs4 import BeautifulSoup
-from pprint import pprint
 from tabulate import tabulate
 
 with open('/Users/pwallington/Library/Preferences/PyCharm2018.2/scratches/series schedule.html', 'r') as f:
