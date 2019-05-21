@@ -55,7 +55,7 @@ with open("schedules/{}s{}-schedule.json".format(args.year, args.season), 'r') a
         week_file = template_str
         # Sub tag data into the template
         for tag in track_tags:
-            week_file = week_file.replace("#%s#" % tag, tr_data[tag])
+            week_file = week_file.replace("#%s#" % tag, tr_data.get(tag,''))
         for tag in week_tags:
             week_file = week_file.replace("#%s#" % tag, week[tag.lower()])
 
