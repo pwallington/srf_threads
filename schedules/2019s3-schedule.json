@@ -1,0 +1,140 @@
+{
+  "season": 3,
+  "year": 2019,
+  "vrs_id": 250880001,
+  "ir_id": 2458,
+  "weeks": [
+    {
+      "week": 1,
+      "start_date": "2019-06-11",
+      "race_length": "22 laps",
+      "start": "Standing start",
+      "cautions": "Local enforced cautions",
+      "weather_date": "2019-06-15",
+      "weather_scale": "1x",
+      "track_name": "Pocono Raceway - 2011",
+      "track_layout": "North"
+    },
+    {
+      "week": 2,
+      "start_date": "2019-06-18",
+      "race_length": "26 laps",
+      "start": "Standing start",
+      "cautions": "Local enforced cautions",
+      "weather_date": "2019-06-22",
+      "weather_scale": "1x",
+      "track_name": "Autodromo Nazionale Monza",
+      "track_layout": "Junior"
+    },
+    {
+      "week": 3,
+      "start_date": "2019-06-25",
+      "race_length": "10 laps",
+      "start": "Standing start",
+      "cautions": "Local enforced cautions",
+      "weather_date": "2019-06-29",
+      "weather_scale": "1x",
+      "track_name": "Mount Panorama Circuit",
+      "track_layout": ""
+    },
+    {
+      "week": 4,
+      "start_date": "2019-07-02",
+      "race_length": "25 laps",
+      "start": "Standing start",
+      "cautions": "Local enforced cautions",
+      "weather_date": "2019-07-06",
+      "weather_scale": "1x",
+      "track_name": "Lime Rock Park",
+      "track_layout": "Full Course"
+    },
+    {
+      "week": 5,
+      "start_date": "2019-07-09",
+      "race_length": "17 laps",
+      "start": "Standing start",
+      "cautions": "Local enforced cautions",
+      "weather_date": "2019-07-13",
+      "weather_scale": "1x",
+      "track_name": "Oran Park Raceway",
+      "track_layout": "Grand Prix"
+    },
+    {
+      "week": 6,
+      "start_date": "2019-07-16",
+      "race_length": "15 laps",
+      "start": "Standing start",
+      "cautions": "Local enforced cautions",
+      "weather_date": "2019-07-20",
+      "weather_scale": "1x",
+      "track_name": "Okayama International Circuit",
+      "track_layout": "Full Course"
+    },
+    {
+      "week": 7,
+      "start_date": "2019-07-23",
+      "race_length": "18 laps",
+      "start": "Standing start",
+      "cautions": "Local enforced cautions",
+      "weather_date": "2019-07-27",
+      "weather_scale": "1x",
+      "track_name": "Circuit Park Zandvoort",
+      "track_layout": "National"
+    },
+    {
+      "week": 8,
+      "start_date": "2019-07-30",
+      "race_length": "15 laps",
+      "start": "Standing start",
+      "cautions": "Local enforced cautions",
+      "weather_date": "2019-08-03",
+      "weather_scale": "1x",
+      "track_name": "Road Atlanta",
+      "track_layout": "Full Course"
+    },
+    {
+      "week": 9,
+      "start_date": "2019-08-06",
+      "race_length": "20 laps",
+      "start": "Standing start",
+      "cautions": "Local enforced cautions",
+      "weather_date": "2019-08-10",
+      "weather_scale": "1x",
+      "track_name": "Suzuka International Racing Course",
+      "track_layout": "West"
+    },
+    {
+      "week": 10,
+      "start_date": "2019-08-13",
+      "race_length": "19 laps",
+      "start": "Standing start",
+      "cautions": "Local enforced cautions",
+      "weather_date": "2019-08-17",
+      "weather_scale": "1x",
+      "track_name": "Summit Point Raceway",
+      "track_layout": "Summit Point Raceway"
+    },
+    {
+      "week": 11,
+      "start_date": "2019-08-20",
+      "race_length": "3 laps",
+      "start": "Standing start",
+      "cautions": "Local enforced cautions",
+      "weather_date": "2019-08-24",
+      "weather_scale": "1x",
+      "track_name": "N\u00fcrburgring Nordschleife",
+      "track_layout": "Industriefahrten"
+    },
+    {
+      "week": 12,
+      "start_date": "2019-08-27",
+      "race_length": "18 laps",
+      "start": "Standing start",
+      "cautions": "Local enforced cautions",
+      "weather_date": "2019-08-31",
+      "weather_scale": "1x",
+      "track_name": "Watkins Glen International",
+      "track_layout": "Cup"
+    }
+  ]
+}

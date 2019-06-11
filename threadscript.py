@@ -14,7 +14,7 @@ thread_template = 'template'
 parser = argparse.ArgumentParser()
 parser.add_argument('-f', '--file', help="Schedule file to read")
 parser.add_argument('-y', '--year', help="Year", type=int, default=2019)
-parser.add_argument('-s', '--season', help="Season", type=int, default=2)
+parser.add_argument('-s', '--season', help="Season", type=int, default=3)
 parser.add_argument('-b', '--begin_week', help="Week to begin at", type=int, default=1)
 parser.add_argument('-e', '--end_week', help="Week to end at", type=int, default=12)
 parser.add_argument('-o', '--output_dir', help="Directory to write files into")
@@ -36,7 +36,7 @@ with open("schedules/{}s{}-schedule.json".format(args.year, args.season), 'r') a
     for week in schedule['weeks']:
         print("Found schedule wk", week['week'], '@', week['track_name'], week['track_layout'])
         if not (args.begin_week <= week['week'] <= args.end_week):
-            print(" * Skipping")
+            print("         * Skipping")
             continue
 
         try:
@@ -49,7 +49,7 @@ with open("schedules/{}s{}-schedule.json".format(args.year, args.season), 'r') a
                 print(" * Loading track data file", track_file)
                 tr_data = json.load(tr_file)
         except Exception:
-            print(" * Error loading track data")
+            print(f"        * Error loading track data for {track_spec}")
             continue
 
         week_file = template_str
@@ -84,11 +84,13 @@ with open("schedules/{}s{}-schedule.json".format(args.year, args.season), 'r') a
 
             import requests
             try:
-                vrs = requests.get("https://virtualracingschool.appspot.com/datapacksInfo/forumCode?id=224830001&week="+str(week['week']))
+                vrs = requests.get(f"https://virtualracingschool.appspot.com/datapacksInfo/"
+                                   f"forumCode?id={schedule['vrs_id']}"
+                                   f"&week={str(week['week'])}")
                 vrs.raise_for_status()
                 output_file.write("\n\n\n#####################\n\n\n\n")
                 output_file.write("VRS INFO:\n\n")
                 output_file.write(vrs.text)
                 print(" * Got VRS info")
-            except Exception:
-                print(" * Error getting VRS info")
+            except Exception as e:
+                print("         * Error getting VRS info:", e)
