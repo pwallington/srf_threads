@@ -3,7 +3,7 @@ from tabulate import tabulate
 import json
 from re import split
 
-with open('/Users/pwallington/Library/Preferences/PyCharm2019.1/scratches/series schedule.html', 'r') as f:
+with open('/Users/pwallington/Library/Preferences/PyCharm2018.2/scratches/series schedule.html', 'r') as f:
     html = f.read()
 
 soup = BeautifulSoup(html, features="html.parser")
